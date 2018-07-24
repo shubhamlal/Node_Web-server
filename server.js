@@ -24,7 +24,11 @@ app.use((req,res,next) => {
 	next();
 });
 
-
+app.get('/Home',(req,res) =>{
+	res.render('home.hbs',{
+		homePage:'This is Home page'
+	});
+});
 app.use(express.static(__dirname + '/public'));
 app.get('/',(req,res) =>{
 	res.send({
@@ -48,11 +52,7 @@ app.get('/bad', (req,res) => {
 	});
 });
 
-app.get('/Home',(req,res) =>{
-	res.render('home.hbs',{
-		homePage:'This is Home page'
-	});
-});
+
 app.use((req,res,next) => {
 	res.render('maintenance.hbs');
 	//Comment for maintenance
