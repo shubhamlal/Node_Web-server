@@ -1,5 +1,5 @@
 {
-  "name": "web-server",
+  "name": "node-web-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,14 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shubhamlal/Node_Web-server.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shubhamlal/Node_Web-server/issues"
-  },
-  "homepage": "https://github.com/shubhamlal/Node_Web-server#readme"
+  "dependencies": {
+    "express": "^4.14.0",
+    "hbs": "^4.0.0"
+  }
 }
